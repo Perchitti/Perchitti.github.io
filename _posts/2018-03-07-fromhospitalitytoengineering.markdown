@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "FromHospitalityToEngineering"
-date:       2018-03-07 19:41:06 +0000
+title:      "From Hospitality To Engineering"
+date:       2018-03-07 14:41:07 -0500
 permalink:  fromhospitalitytoengineering
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Sinatra Project - Collaborating Sentences"
-date:       2018-05-29 18:41:53 +0000
+title:      "Sinatra Project Collaborating Sentences"
+date:       2018-05-29 14:41:54 -0400
 permalink:  sinatra_project_-_collaborating_sentences
 ---
 

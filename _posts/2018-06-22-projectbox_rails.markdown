@@ -13,9 +13,4 @@ There are validations throughout the project such as presence, password_confirma
 Looking forward to making this appealing to the artist eye once I learn JS. 
 
 
-![](https://imgur.com/a/9ojUMD1)
-
-![https://imgur.com/a/9ojUMD1]
-
-![](http://imgur.com/a/9ojUMD1)
 

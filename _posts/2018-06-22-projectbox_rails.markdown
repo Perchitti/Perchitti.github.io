@@ -12,7 +12,6 @@ There are validations throughout the project such as presence, password_confirma
 
 Looking forward to making this appealing to the artist eye once I learn JS. 
 
-(https://imgur.com/a/9ojUMD1)
 
-![](https://imgur.com/a/9ojUMD1)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/9ojUMD1"><a href="//imgur.com/9ojUMD1"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 

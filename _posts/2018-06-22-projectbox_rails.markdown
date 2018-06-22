@@ -10,6 +10,8 @@ ProjectBox is built for artists to store their projects within the site. The Use
 
 There are validations throughout the project such as presence, password_confirmation, and others. The validations throughout the project allow projects to stay private. This is something that is very important to most artists, filmmakers, typically there is a "working title" then the project comes to completion, that when they usually release a final title. Within ProjectBox users are able to update endlessly while maintaing the proper url that was instantiated upon creation. 
 
-![https://imgur.com/a/9ojUMD1]
+Looking forward to making this appealing to the artist eye once I learn JS. 
+
+[https://imgur.com/a/9ojUMD1](http://)
 
 

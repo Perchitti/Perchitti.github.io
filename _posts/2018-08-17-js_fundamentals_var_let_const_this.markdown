@@ -18,9 +18,9 @@ Before we look at variables and "this", let's quickly review scope & hoisting.
 > 
 
 
-**Hositing** is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+**Hoisting** is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
 
-AKA no matter where in your code the functions and variables are *declared*, they are "moved" to the top of their scope.
+That is to say, no matter where in your code the functions and variables are *declared*, they are "moved" to the top of their scope.
 *Hoisting only moves the delcaration, assignments are left in place* (BTW these are not physically moved)
 
 MDN says it best, 
@@ -58,7 +58,7 @@ Imagine in hoisting this is actually how it is interpreted...
 > ```
 
 
-*Tisk Tisk*, Don't forget to **declare** and **initialize** your variables before use. 
+*Tsk Tsk*, Don't forget to **declare** and **initialize** your variables before use. 
 
 INSERT PHOTO?
 
@@ -70,7 +70,7 @@ First up,  the OG "var".
 > The **var** statement declares a variable, optionally initializing it to a value.
 > -MDN
 
-Var is becoming an "old script" and is begininng to be replaced by "let" (we will talk about let later) but that doesn't mean var is going anywhere anytime soon so get to know it. 
+Var is becoming an "old script" and is begininng to be replaced by "let" (we will talk about let later) but that doesn't mean var is going anywhere anytime soon, so get to know it. 
 
 Var in global scope:
 
@@ -212,7 +212,7 @@ Output:
 Takeaway:
 
 If let and var were the last pick for dodgeball, I'd pick **let**. (& you should too)
-Let can reduce the risk of errors which raises your chances to make it to the dodgeball championship.
+Let can reduce the risk of errors which raises your chances of making it to the dodgeball championship.
 
 
 

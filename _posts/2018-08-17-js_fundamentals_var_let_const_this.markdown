@@ -1,11 +1,10 @@
 ---
 layout: post
-title:      "JS fundamentals "
+title:      "JS fundamentals VAR | LET | CONST | "THIS""
 date:       2018-08-17 14:00:24 -0400
 permalink:  js_fundamentals_var_let_const_this
 ---
 
-# VAR | LET | CONST | "THIS"
 
 Before we look at variables and "this", let's quickly review scope & hosting.
 

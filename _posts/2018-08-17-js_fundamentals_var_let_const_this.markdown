@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JS fundamentals, VAR | LET | CONST | "THIS""
-date:       2018-08-17 18:00:23 +0000
+date:       2018-08-17 14:00:24 -0400
 permalink:  js_fundamentals_var_let_const_this
 ---
 
@@ -35,13 +35,13 @@ MDN says it best,
 > 
 > ```
 
-What is the expected output?
+Output:
 
-> ```
+> 
 > 
 >  undefined
 > 
-> ```
+> 
 
 Why?!
 
@@ -57,7 +57,7 @@ Imagine in hoisting this is actually how it is interpreted...
 > ```
 
 
-*Tisk Tisk*, Don't forget to **declare** and **initalise** your variables before use. 
+*Tisk Tisk*, Don't forget to **declare** and **initialize** your variables before use. 
 
 INSERT PHOTO?
 
@@ -91,6 +91,7 @@ Example of local, function-scoped var.
 
 > ```
 >  function game() {
+>  
 > for (var i = 0; i < 5; i++) {
 > if (true) {
 > var player = 'peach';
@@ -147,7 +148,170 @@ When you declare a variable by *let* that variable’s scope will be the block i
 
 > The let statement declares a block scope local variable, optionally initializing it to a value. -MDN
 
+Example in global scope:
+​
+> ```
+> let game = "super mario"
+> 
+>game
+>
+> ```
+​
+Output:
+​
+>  super mario
+> 
+>   // game is accessible within the global scope.
 
+Example of local, function-scoped let.
+
+> ```
+>  function game() {
+>  
+> for (var i = 0; i < 5; i++) {
+> if (true) {
+> let player = 'peach';
+> }
+> }
+> console.log(player)
+> }
+> 
+> game();
+> ```
+
+Output:
+
+>  ReferenceError: player is not defined
+> 
+>  // player is not accessible because it is in a different block from let
+
+The correct way to access player
+
+> ```
+>  function game() {
+>  
+> for (var i = 0; i < 5; i++) {
+> if (true) {
+> let player = 'peach';
+> console.log(player)
+> }
+> }
+> }
+> 
+> game();
+> ```
+
+Output:
+>  peach
+> 
+>  // player is accessible because it is called within the same block
+>  
+
+
+Takeaway:
+
+If let and var were the last pick for dodgeball, I'd pick **let**. (& you should too)
+Let can reduce the risk of errors which raises your chances to make it to the dodgeball championship.
+
+
+
+# Const
+
+> Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through re-assignment, and it can't be redeclared. -MDN
+
+Const is very straight forward, it is constant, consitent, it will not change. Constants are useful for making it clear to others working within your project that the intended variable should not be reassigned.
+*Although const values cannot be reassigned, they are mutable as it is possible to modify the properties of objects delcared with const. 
+
+
+>```
+> const player = 'mario'
+> 
+> player = 'peach'
+> 
+> console.log(player)
+> ```
+
+
+Output:
+>  Uncaught TypeError: Assignment to constant variable.
+
+
+
+Great work! Now that you're familiar with var, let and const let's throw in "this" to mix things up. 
+
+
+# "this"
+Going to be VERY honest with you, *this* is confusing. After you read this short piece, google it for hours, days! Just know, you are not alone and it will take time to understand. Let's begin...
+
+> **this** keyword refers to an object, that object which is executing the current bit of javascript code.
+
+In other words, every javascript function while executing has a reference to its current execution context, called *this*. Execution context means here is how the function is called.
+
+To understand *this* keyword, only we need to know how, when and from where the function is called, does not matter how and where function is declared or defined.
+
+Let's jump into examples
+
+> ```
+>  function game() {
+>  this.a = 'peach';
+>  console.log(a);
+>  }
+>  game();
+>  ```
+
+Output:
+
+> peach
+> 
+
+Let's try a different approach
+
+> ```
+> var person = {
+>     firstName: "Mario",
+>     lastName : "Brothers",
+>     id       : 1,
+>     fullName : function() {
+>        return this.firstName + " " + this.lastName;
+>     }
+> };
+> person.fullName();
+> ```
+
+Output:
+
+> "Mario Brothers"
+
+
+Ok 1 more for good luck. 
+
+> ```
+> 
+> class Player {
+> 
+>     constructor(name) {
+> this.name = name;
+>     }
+> sayHi() {
+> alert(this.name)
+> }
+> }
+> 
+> let playerName = new Player("Yoshi");
+> playerName.sayHi()
+> ```
+
+Output:
+
+> Yoshi
+
+Continue to study *this*. Once you grasp the concept it becomes extrememly beneficial. 
+
+
+
+*Bonus notes
+
+**Var** variables can be updated and re-declared within its scope; **let** variables can be updated but not re-declared; **const** variables can neither be updated nor re-declared.
 
 
 

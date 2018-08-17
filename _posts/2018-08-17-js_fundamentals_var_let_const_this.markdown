@@ -1,12 +1,13 @@
 ---
 layout: post
-title:      "JS fundamentals VAR | LET | CONST | "THIS""
+title:      "JS fundamentals "
 date:       2018-08-17 14:00:24 -0400
 permalink:  js_fundamentals_var_let_const_this
 ---
 
+# VAR | LET | CONST | "THIS"
 
-Before we look at variables and "this", let's quickly review scope & hosting.
+Before we look at variables and "this", let's quickly review scope & hoisting.
 
 # Scope/Hoisting 
 **Scope** refers to the current context of code, which determines the accessibility of variables. There are two types of scope, local and global:
